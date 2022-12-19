@@ -22,7 +22,7 @@ const uri = "mongodb+srv://user:1234@cluster0.wumse.mongodb.net/?retryWrites=tru
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 client.connect(err => {
-    console.log('bbb')
+    
     const collection = client.db("tracker").collection("user");
     const reportCollection = client.db("tracker").collection("report");
     const projectCollection = client.db("tracker").collection("project");
